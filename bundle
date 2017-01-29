@@ -34,7 +34,7 @@ bbprompt_return_code() {
     return $1
 }
 
-export PS1=${BBPROMPT_PS1:-"${BBPROMPT_USER}@${BBPROMPT_HOST} ${BBPROMPT_DIRECTORY} ${BBPROMPT_JOBS}${BBPROMPT_RETURN_CODE}$NC$ "}
+export PS1=${BBPROMPT_PS1:-"${BBPROMPT_USER}@${BBPROMPT_HOST} ${BBPROMPT_DIRECTORY} ${BBPROMPT_JOBS}$NC$ "}
 
 # display user@host:/path in title, append to bash_history on every command
 case $TERM in
